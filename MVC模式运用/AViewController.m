@@ -19,6 +19,15 @@
 
 @end
 
+/*
+ 
+ 开发模式的理解
+ 
+ MVC  模式： 看了会别人的代码发现自己对mvc 模式理解的不够充分，自己之前的理解 主要在于 不管是view的点击事件 还是点击后事物处理都由VC(控制器)来把控，今天看了别人的代码发现可以用代理将view的点击事件携带model 再次传递给VC 这样就完成合理的分工 view 显示效果 VC 处理事件 model 作为数据在两者之间传递.
+ 
+ 自己最早对mvc 模式的理解是这样的 我们在一个vc里面发送请求，得到数据，然后将数据转化成model（对象）存储起来，然后我们在vc 中添加View，根据model的数量和model对象里面的属性对view进行展示。
+ */
+
 @implementation AViewController
 
 - (void)viewDidLoad {
